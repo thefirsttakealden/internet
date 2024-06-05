@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投擲多個骰子</title>
+    <style>
+        .diceImage {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>投擲骰子</h1>
+    <label for="diceCount">選擇骰子數量:</label>
+    <input type="number" id="diceCount" min="1" value="1">
+    <button id="rollButton">投擲骰子</button>
+    <p id="result">結果將顯示在這裡</p>
+    <div id="diceContainer"></div>
+
+    <script src="dice.js"></script>
+</body>
+</html>
