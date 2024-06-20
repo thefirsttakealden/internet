@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玫瑰收集遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <div id="sidebar">
+            <h2>玫瑰收集遊戲</h2>
+            <div class="sidebar-section">
+                <div id="collect-button">
+                    <button id="collect-roses">收集玫瑰</button>
+                </div>
+                <div id="rose-counter">玫瑰數量: <span id="roses">0</span></div>
+                <div id="auto-rose-counter">每秒產生玫瑰數量: <span id="autoRosesPerSecond">0</span></div>
+            </div>
+            <div class="sidebar-section">
+                <h3>兌換物品</h3>
+                <div id="items">
+                    <div class="item">
+                        <span class="item-name">基礎自動採花機(每秒1*數量)&nbsp;&nbsp;</span>
+                        <span class="item-cost">價格:10玫瑰&nbsp;</span>
+                        <button class="exchange-button" data-cost="10">兌換</button>
+                        <span class="item-quantity" id="item1-quantity">0</span>
+                    </div>
+                    <div class="item">
+                        <span class="item-name">高級自動採花機(每秒2*數量)&nbsp;&nbsp;</span>
+                        <span class="item-cost">價格:20玫瑰&nbsp;</span>
+                        <button class="exchange-button" data-cost="20">兌換</button>
+                        <span class="item-quantity" id="item2-quantity">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
